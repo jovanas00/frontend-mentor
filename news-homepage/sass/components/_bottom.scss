@@ -1,0 +1,44 @@
+@use '../variables' as v;
+
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.25rem;
+
+  .bottom__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    .card__number {
+      color: v.$grayish-blue;
+      font-family: v.$font-bold;
+      font-size: v.$font-size * 3;
+    }
+
+    .card__name {
+      color: v.$very-dark-blue;
+      font-family: v.$font-extra;
+
+      &:hover {
+        color: v.$soft-red;
+        cursor: pointer;
+      }
+    }
+
+    .card__text {
+      color: v.$dark-grayish-blue;
+      font-family: v.$font-regular;
+    }
+  }
+}

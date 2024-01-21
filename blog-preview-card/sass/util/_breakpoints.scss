@@ -1,0 +1,7 @@
+@use '../globals' as g;
+
+@mixin breakpoint($size) {
+  @media (max-width: map-get(g.$breakpoints, $size)) {
+    @content;
+  }
+}

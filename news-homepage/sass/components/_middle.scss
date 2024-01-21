@@ -1,0 +1,94 @@
+@use '../variables' as v;
+
+.middle {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+
+  .middle__left {
+    display: grid;
+    gap: .9375rem;
+    .left__top {
+      .left__top--mobile {
+        display: none;
+      }
+    }
+
+    .left__bottom {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.875rem;
+
+      .left__title {
+        font-size: v.$font-size * 3;
+        font-family: v.$font-extra;
+      }
+
+      .left__text {
+        color: v.$dark-grayish-blue;
+        font-family: v.$font-regular;
+        font-size: v.$font-size;
+        margin-bottom: 1.875rem;
+      }
+
+      button {
+        border: none;
+        background-color: v.$soft-red;
+        color: v.$off-white;
+        padding: .625rem 1.25rem;
+
+        &:hover {
+          background-color: v.$very-dark-blue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .middle__right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    background-color: v.$very-dark-blue;
+    padding: .625rem;
+
+    .right__title {
+      color: v.$soft-orange;
+      font-family: v.$font-extra;
+      font-size: v.$font-size * 2;
+    }
+
+    .right__sections {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+
+      .right__section {
+        display: flex;
+        flex-direction: column;
+        gap: .625rem;
+        padding-bottom: 1.875rem;
+        border-bottom: 1px solid v.$grayish-blue;
+        color: v.$grayish-blue;
+        font-size: v.$font-size;
+        font-family: v.$font-regular;
+        line-height: 1.5625rem;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        .section__title {
+          font-size: v.$font-size*1.2;
+          font-family: v.$font-bold;
+          color: white;
+
+          &:hover {
+            color: v.$soft-orange;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

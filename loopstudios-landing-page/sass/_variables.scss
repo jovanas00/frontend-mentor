@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Alata;
+  src: url('../fonts/Alata/Alata-Regular.ttf');
+}
+
+@font-face {
+  font-family: Josefin-Sans;
+  src: url('../fonts/Josefin_Sans/static/JosefinSans-Light.ttf');
+}
+
+//layout
+$brekapoints: (
+  "mobile": 23.4375rem,
+  "desktop": 90rem,
+);
+
+//colors
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$dark-gray: hsl(0, 0%, 55%);
+$very-dark-gray: hsl(0, 0%, 41%);
+
+//typography
+$font-size: .875rem;
+$font-light: Josefin-Sans;
+$font-regular: Alata;

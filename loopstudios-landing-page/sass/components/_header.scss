@@ -1,0 +1,27 @@
+@use '../variables' as v;
+@use '../mixin' as m;
+
+.header{
+  background: url('../../images/desktop/image-hero.jpg') center center / cover no-repeat;
+  padding: 3.125rem 6.25rem 6.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.25rem;
+
+  .header-logo-menu {
+    display: flex;
+    justify-content: space-between;
+
+    @include m.list;
+  }
+
+  .header__text {
+    color: v.$white;
+    font-size: v.$font-size * 5;
+    width: 40.625rem;
+    font-family: v.$font-light;
+    line-height: 3.75rem;
+    border: 1px solid v.$white;
+    padding: 3.125rem;
+  }
+}

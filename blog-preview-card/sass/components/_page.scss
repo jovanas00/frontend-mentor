@@ -1,0 +1,5 @@
+@use '../globals' as g;
+
+.page {
+  background-color: g.$primary;
+}

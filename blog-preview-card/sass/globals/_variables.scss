@@ -1,0 +1,22 @@
+//colors
+$primary: hsl(47, 88%, 63%);
+$white: hsl(0, 0%, 100%);
+$grey: hsl(0, 0%, 50%);
+$black: hsl(0, 0%, 7%); 
+
+//font-size
+$font-size: 1rem;
+
+//font-family
+$font-extra: Figtree-ExtraBold;
+$font-semi: Figtree-SemiBold;
+
+//border-radius
+$base-border-radius: .9375rem;
+$elements-border-radius: .3125rem;
+
+//breakpoints
+$breakpoints: (
+  "mobile": 23.4375rem,
+  "desktop": 90rem,
+);

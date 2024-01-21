@@ -1,0 +1,57 @@
+@use 'variables' as v;
+
+@mixin breakpoints($size) {
+  @media (max-width: map-get(v.$breakpoints, $size)) {
+    @content;
+  }
+}
+
+@include breakpoints("mobile") {
+  .page {
+    padding: 1.25rem .625rem;
+  }
+
+  .left__top--desktop {
+    display: none;
+  }
+
+  .header {
+    ul {
+      li {
+        display: none;
+      }
+
+      .icon-menu {
+        visibility: visible;
+        margin-top: 25%;
+      }
+    }
+  }
+
+  .middle {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .middle__left{
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .left__top {
+        .left__top--mobile {
+          display: grid;
+        }
+      }
+      
+      .left__bottom {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+   
+  }
+
+  .bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

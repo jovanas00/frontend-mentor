@@ -1,0 +1,36 @@
+@use 'variables' as v;
+
+@mixin list {
+  ul {
+    display: flex;
+    gap: 1.25rem;
+    li {
+      display: inline;
+      list-style: none;
+
+      a{
+        text-decoration: none;
+        color: v.$white;
+        font-family: v.$font-regular;
+        font-size: v.$font-size;
+
+        &:hover {
+          padding-bottom: .3125rem;
+          border-bottom: 2px solid v.$white;
+        }
+      }
+    }
+  }
+}
+
+@mixin footerPosition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin breakpoints($size) {
+  @media (max-width: map-get(v.$brekapoints, $size)) {
+    @content;
+  }
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Figtree-ExtraBold;
+  src: url('../assets/fonts/static/Figtree-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: Figtree-SemiBold;
+  src: url('../assets/fonts/static/Figtree-SemiBold.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}

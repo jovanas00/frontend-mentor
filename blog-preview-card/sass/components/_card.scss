@@ -1,0 +1,47 @@
+@use '../globals' as g;
+
+.card {
+  background-color: g.$white;
+  border: .0625rem solid black;
+  border-radius: g.$base-border-radius;
+  padding: 1.25rem;
+  font-family: g.$font-semi;
+  box-shadow: .3125rem .3125rem;
+  width: 25rem;
+  margin-inline: 1.25rem;
+
+  .card__img {
+    border-radius: g.$elements-border-radius;
+    width: 100%;
+  }
+
+  .card__desc {
+    font-family: g.$font-extra;
+    background-color: g.$primary;
+    border-radius: g.$elements-border-radius;
+    padding: .3125rem .625rem;
+  }
+
+  p {
+    font-size: g.$font-size;
+    font-family: g.$font-semi;
+    color: g.$grey;
+    line-height: 1.5625rem;
+    margin-bottom: .625rem;
+  }
+
+  h1 {
+    font-size: 1.5625rem;
+    margin: .625rem 0;
+    cursor: pointer;
+
+    &:hover {
+      color: g.$primary;
+    }
+  }
+
+  &:hover {
+    box-shadow: .625rem .625rem;
+  }
+  transition: box-shadow 0.5s;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="dist/index.css">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- header -->
+    <div class="header">
+      <div class="header__logo">
+        <img src="assets/images/logo.svg" alt="w-logo">
+      </div>
+      <div class="header__menu">
+        <ul>
+          <a href=""><img src="assets/images/icon-menu.svg" alt="icon-menu" class="icon-menu" type="button"></a>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- middle -->
+    <div class="middle">
+      <!-- img & text -->
+      <div class="middle__left">
+        <div class="left__top">
+          <img src="assets/images/image-web-3-desktop.jpg" alt="legos" class="left__top--desktop">
+          <img src="assets/images/image-web-3-mobile.jpg" alt="legos" class="left__top--mobile">
+        </div>
+        <div class="left__bottom">
+          <div class="left__title">
+            The Bright Future of Web 3.0?
+          </div>
+          <div>
+            <div class="left__text">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?
+            </div>
+            <button>Read more</button>
+          </div>
+        </div>
+      </div>
+      <!-- black text -->
+      <div class="middle__right">
+        <div class="right__title">New</div>
+        <div class="right__sections">
+          <div class="right__section">
+            <div class="section__title">Hydrogen VS Electric Cars</div>
+            <div>Will hydrogen-fueled cars ever catch up to EVs?</div>
+          </div>
+          <div class="right__section">
+            <div class="section__title">The Downsides of AI Artistry</div>
+            <div>What are the possible adverse effects of on-demand AI image generation?</div>
+          </div>
+          <div class="right__section">
+            <div class="section__title">Is VC Funding Drying Up?</div>
+            <div>Private funding by VC firms is down 50% YOY. We take a look at what that means.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bottom -->
+    <div class="bottom">
+      <div class="bottom__card">
+        <div>
+          <img src="assets/images/image-retro-pcs.jpg" alt="">
+        </div>
+        <div class="card">
+          <div class="card__number">01</div>
+          <div class="card__name">Reviving Retro PCs</div>
+          <div class="card__text">What happens when old PCs are given modern upgrades?</div>
+        </div>
+      </div>
+      <div class="bottom__card">
+        <div>
+          <img src="assets/images/image-top-laptops.jpg" alt="retro-pcs">
+        </div>
+        <div class="card">
+          <div class="card__number">02</div>
+          <div class="card__name">Top 10 Laptops of 2022</div>
+          <div class="card__text"> Our best picks for various needs and budgets.</div>
+        </div>
+      </div>
+      <div class="bottom__card">
+        <div>
+          <img src="assets/images/image-gaming-growth.jpg" alt="keyboard">
+        </div>
+        <div class="card">
+          <div  class="card__number">03</div>
+          <div class="card__name">The Growth of Gaming</div>
+          <div class="card__text">How the pandemic has sparked fresh opportunities.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="modal__content">
+      <div>
+        <img src="assets/images/icon-menu-close.svg" alt="icon-menu-close" class="modal__close">
+      </div>
+      <div class="modal__li">
+        <a href="#">Home</a>
+        <a href="#">New</a>
+        <a href="#">Popular</a>
+        <a href="#">Trending</a>
+        <a href="#">Categories</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" type="module">
+    
+  </script>
+</body>
+</html>

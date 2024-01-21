@@ -1,0 +1,73 @@
+@use 'variables' as v;
+
+.page {
+  background: url('../images/bg-pattern-desktop.svg') center center / cover repeat;
+  height: 100vh;
+  font-size: v.$font-size * 2.5;
+  letter-spacing: 8px;
+
+  .page__logo {
+    padding: 1.875rem;
+    width: 50%;
+  }
+
+  .page__info {
+    padding: 3.125rem;
+    color: v.$grayish-red;
+    text-align: center;
+    font-family: v.$font-semi-bold;
+    display: flex;
+    align-items: flex-start;
+
+    span {
+      color: v.$desaturated-red;
+      font-family: v.$font-light;
+    }
+
+    p {
+      color: v.$desaturated-red;
+      line-height: 1.25rem;
+      font-size: v.$font-size;
+      letter-spacing: 0;
+      font-family: v.$font-regular;
+    }
+
+    .page__input {
+      position: relative;
+      input {
+        border-radius: 1.25rem;
+        padding: .625rem 0 .625rem 1.25rem;
+        border: 1px solid v.$input-color;
+        background-color: transparent;
+        width: 18.75rem;
+
+        &::placeholder {
+          color: v.$input-color;
+        }
+      }
+
+      .input__btn {
+        width: 3.125rem;
+        position: absolute;
+        top: .0938rem;
+        right: 0;
+        border-radius: 1.5625rem;
+        background: v.$second-gradient;
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);;
+
+        &:hover {
+          background: v.$first-gradient;
+        }
+      }
+
+      .input__message {
+        display: none;
+        color: v.$soft-red;
+        font-size: 10px;
+        padding-left: 20px;
+        padding-top: 10px;
+        letter-spacing: 0;
+      }
+    }
+  }
+}

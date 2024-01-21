@@ -1,0 +1,42 @@
+@use '../variables' as v;
+
+.modal {
+  // display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+
+  .modal__content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 15.625rem;
+    background-color: v.$off-white;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    font-family: v.$font-regular;
+
+    .modal__close {
+      position: absolute;
+      right: 1.25rem;
+      cursor: pointer;
+    }
+
+    .modal__li {
+      padding-top: 6.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: v.$very-dark-blue;
+  }
+}

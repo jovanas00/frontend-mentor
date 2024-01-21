@@ -1,0 +1,28 @@
+@use '../variables' as v;
+@use '../mixin' as m;
+
+.footer {
+  padding: 1.25rem 6.25rem;
+  background-color: v.$black;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  .footer__icons {
+    @include m.footerPosition;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .footer-menu-copyright {
+    @include m.footerPosition;
+
+    @include m.list;
+
+    .footer__copyright {
+      color: v.$white;
+    }
+  }
+}

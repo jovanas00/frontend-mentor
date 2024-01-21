@@ -1,0 +1,8 @@
+@use '../variables' as v;
+
+.page {
+  display: grid;
+  gap: 1.875rem;
+  padding: 3.125rem 6.25rem;
+  background: v.$off-white;
+}

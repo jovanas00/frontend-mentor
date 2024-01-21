@@ -1,0 +1,31 @@
+@use '../variables' as v;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+    font-family: v.$font-regular;
+
+    .icon-menu {
+      visibility: hidden;
+    }
+    
+    li {
+      display: inline;
+    }
+
+    a {
+      font-size: 80%;
+      color: v.$dark-grayish-blue;
+      text-decoration: none;
+
+      &:hover {
+        color: v.$soft-red;
+      }
+    }
+  }
+}
