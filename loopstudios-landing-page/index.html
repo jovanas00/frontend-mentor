@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -20,6 +20,7 @@
           <img src="images/logo.svg" alt="loopstudios">
         </div>
         <div class="header__menu">
+          <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="icon-hamburger">
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Careers</a></li>
@@ -48,7 +49,7 @@
     <div class="content_bottom">
       <div class="bottom-header-btn">
         <div>OUR CREATIONS</div>
-        <button>SEE ALL</button>
+        <button class="see-all-btn">SEE ALL</button>
       </div>
       <div class="bottom-movies">
         <div>
@@ -58,56 +59,48 @@
         </div>
         <div>
           <div>NIGHT ARCADE</div>
-          <img src="images/desktop/image-night-arcade.jpg" alt="earth" class="desktop">
-          <img src="images/mobile/image-night-arcade.jpg" alt="" class="mobile">
+          <img src="images/desktop/image-night-arcade.jpg" alt="arcade" class="desktop">
+          <img src="images/mobile/image-night-arcade.jpg" alt="arcade" class="mobile">
         </div>
         <div>
           <div>SOCCER TEAM VR</div>
-          <img src="images/desktop/image-soccer-team.jpg" alt="earth" class="desktop">
-          <img src="images/mobile/image-soccer-team.jpg" alt="" class="mobile">
+          <img src="images/desktop/image-soccer-team.jpg" alt="soccer" class="desktop">
+          <img src="images/mobile/image-soccer-team.jpg" alt="soccer" class="mobile">
         </div>
         <div>
           <div>THE GRID</div>
-          <img src="images/desktop/image-grid.jpg" alt="earth" class="desktop">
-          <img src="images/mobile/image-grid.jpg" alt="" class="mobile">
+          <img src="images/desktop/image-grid.jpg" alt="grid" class="desktop">
+          <img src="images/mobile/image-grid.jpg" alt="grid" class="mobile">
         </div>
         <div>
           <div>FROM UP ABOVE VR</div>
-          <img src="images/desktop/image-from-above.jpg" alt="earth" class="desktop">
-          <img src="images/mobile/image-from-above.jpg" alt="" class="mobile">
+          <img src="images/desktop/image-from-above.jpg" alt="above" class="desktop">
+          <img src="images/mobile/image-from-above.jpg" alt="above" class="mobile">
         </div>
         <div>
           <div>POCKET BOREALIS</div>
-          <img src="images/desktop/image-pocket-borealis.jpg" alt="earth" class="desktop">
-          <img src="images/mobile/image-pocket-borealis.jpg" alt="" class="mobile">
+          <img src="images/desktop/image-pocket-borealis.jpg" alt="borealis" class="desktop">
+          <img src="images/mobile/image-pocket-borealis.jpg" alt="borealis" class="mobile">
         </div>
         <div>
           <div>THE CURIOSITY</div>
-          <img src="images/desktop/image-curiosity.jpg" alt="earth" class="desktop">
-          <img src="images/mobile/image-curiosity.jpg" alt="" class="mobile">
+          <img src="images/desktop/image-curiosity.jpg" alt="curiosity" class="desktop">
+          <img src="images/mobile/image-curiosity.jpg" alt="curiosity" class="mobile">
         </div>
         <div>
           <div>MAKE IT FISHEYE</div>
-          <img src="images/desktop/image-fisheye.jpg" alt="earth" class="desktop">
-          <img src="images/mobile/image-fisheye.jpg" alt="" class="mobile">
+          <img src="images/desktop/image-fisheye.jpg" alt="fisheye" class="desktop">
+          <img src="images/mobile/image-fisheye.jpg" alt="fisheye" class="mobile">
         </div>
       </div>
     </div>
   </div>
   <!-- footer -->
   <div class="footer">
-    <div class="footer__icons">
+    <div class="footer-logo-menu">
       <div>
         <img src="images/logo.svg" alt="logo">
       </div>
-      <div>
-        <img src="images/icon-facebook.svg" alt="facebook-icon">
-        <img src="images/icon-twitter.svg" alt="twitter-icon">
-        <img src="images/icon-pinterest.svg" alt="pinterest-icon">
-        <img src="images/icon-instagram.svg" alt="instagram-icon">
-      </div>
-    </div>
-    <div class="footer-menu-copyright">
       <div class="footer__menu">
         <ul>
           <li><a href="#">About</a></li>
@@ -117,10 +110,34 @@
           <li><a href="#">Support</a></li>
         </ul>
       </div>
+      
+    </div>
+    <div class="footer-icons-copyright">
+      <div class="footer__icons">
+        <img src="images/icon-facebook.svg" alt="facebook-icon">
+        <img src="images/icon-twitter.svg" alt="twitter-icon">
+        <img src="images/icon-pinterest.svg" alt="pinterest-icon">
+        <img src="images/icon-instagram.svg" alt="instagram-icon">
+      </div>
       <div class="footer__copyright">
         © 2021 Loopstudios. All rights reserved.
       </div>
     </div>
+  </div>
+
+  <!-- modal menu --> 
+  <div class="modal-menu">
+    <div class="modal-top">
+      <img src="images/logo.svg" alt="logo">
+      <img src="images/icon-close.svg" alt="x" class="close-btn">
+    </div>
+    <ul>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">CAREERS</a></li>
+      <li><a href="#">EVENTS</a></li>
+      <li><a href="#">PRODUCTS</a></li>
+      <li><a href="#">SUPPORT</a></li>
+    </ul>
   </div>
   <script src="script.js" type="module"></script>
 </body>

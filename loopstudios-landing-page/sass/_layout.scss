@@ -1,2 +1,96 @@
+@use 'variables' as v;
 @use 'mixin' as m;
 
+@include m.breakpoints("mobile") {
+    .header {
+        background: url('../../images/mobile/image-hero.jpg') center center / cover no-repeat;
+        padding: .625rem;
+        .header-logo-menu {
+            display: flex;
+            justify-content: space-between;
+        
+            @include m.list;
+        
+            .header__menu {
+                ul {
+                    display: none;
+                }
+
+                .icon-hamburger {
+                    display: flex;
+                    cursor: pointer;
+                }
+            }
+          }
+
+        .header__text {
+            color: v.$white;
+            font-size: v.$font-size*3;
+            line-height: 2.5rem;
+            font-family: v.$font-light;
+            border: 1px solid v.$white;
+            padding: 1.875rem;
+            margin-bottom: 6.25rem;
+        }
+    }
+
+    .content {
+        padding: 6.25rem .625rem 1.25rem .625rem;
+
+        .content__top {
+            position: unset;
+            .top-text {
+                position: unset;
+                text-align: center;
+
+                h1 {
+                    font-size: v.$font-size*2;
+                }
+            }
+        }
+
+        .content_bottom {
+            .bottom-header-btn {
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                div {
+                    font-size: v.$font-size*2;
+                    text-align: center;
+                }
+            }
+        
+            .bottom-movies {
+                grid-template-columns:  1fr;
+                div {
+                    .desktop {
+                        display: none;
+                    }
+    
+                    .mobile {
+                        display: grid;
+                        max-width: 100%;
+                    }
+                }  
+            }
+        }
+    }
+
+    
+    .footer {
+        flex-direction: column;
+        padding: 1.25rem 3.125rem;
+        gap: 1.25rem;
+        .footer-logo-menu {
+            text-align: center;
+            gap: 1.25rem;
+            ul {
+                flex-direction: column;
+            }
+        }
+    
+        .footer-icons-copyright {
+            text-align: center;
+        }
+    }
+}

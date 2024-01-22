@@ -5,24 +5,32 @@
   padding: 1.25rem 6.25rem;
   background-color: v.$black;
   display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
+  align-items: center;
+  justify-content: space-between;
 
-  .footer__icons {
+  .footer-logo-menu {
     @include m.footerPosition;
+    @include m.list;
 
     img {
       cursor: pointer;
     }
   }
 
-  .footer-menu-copyright {
+  .footer-icons-copyright {
     @include m.footerPosition;
 
-    @include m.list;
+    text-align: right;
+
+    .footer__icons {
+      img {
+        margin-right: .3125rem;
+        cursor: pointer;
+      }
+    }
 
     .footer__copyright {
-      color: v.$white;
+      color: v.$dark-gray;
     }
   }
 }

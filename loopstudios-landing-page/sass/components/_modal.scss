@@ -1,0 +1,48 @@
+@use '../variables' as v;
+@use '../mixin' as m;
+
+.modal-menu {
+    display: none;
+    flex-direction: column;
+    gap: 6.25rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: v.$black;
+    padding: 2.5rem 1.25rem;
+
+    .modal-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        li {
+          display: inline;
+          list-style: none;
+    
+          a{
+            text-decoration: none;
+            color: v.$dark-gray;
+            font-family: v.$font-regular;
+            font-size: v.$font-size*2;
+    
+            &:hover {
+              padding-bottom: .3125rem;
+              border-bottom: 2px solid v.$white;
+            }
+          }
+        }
+      }
+}

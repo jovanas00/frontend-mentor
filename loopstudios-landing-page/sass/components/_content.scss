@@ -16,7 +16,7 @@
       flex-direction: column;
       gap: 2.8125rem;
       position: absolute;
-      width: 31.25rem;
+      max-width: 31.25rem;
       padding: 3.125rem;
       top: 50%;
       left: 44%;
@@ -41,7 +41,9 @@
     gap: 3.125rem;
 
     .bottom-header-btn {
-      @include m.footerPosition;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       div {
         font-family: v.$font-light;
         font-size: v.$font-size*3;
@@ -81,7 +83,7 @@
           z-index: 10;
         }
         img {
-          width: 100%;
+          max-width: 100%;
         }
 
         .mobile {
