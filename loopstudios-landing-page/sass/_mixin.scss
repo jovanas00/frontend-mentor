@@ -5,23 +5,33 @@
     display: flex;
     gap: 1.25rem;
     li {
-      display: inline;
+      // display: inline;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       list-style: none;
+        a {
+          text-decoration: none;
+          margin-bottom: .3125rem;
+          color: v.$white;
+          font-family: v.$font-regular;
+          font-size: v.$font-size;
+        }
 
-      a{
-        text-decoration: none;
-        color: v.$white;
-        font-family: v.$font-regular;
-        font-size: v.$font-size;
+        .border-bottom {
+          width: 1.25rem;
+        }
 
         &:hover {
-          padding-bottom: .3125rem;
-          border-bottom: 2px solid v.$white;
+          .border-bottom {
+            border-top: 2px solid v.$white;;
+          }
         }
       }
     }
   }
-}
+
 
 @mixin footerPosition {
   display: flex;

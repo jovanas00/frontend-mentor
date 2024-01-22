@@ -26,6 +26,10 @@
       img {
         margin-right: .3125rem;
         cursor: pointer;
+        &:hover {
+          padding-bottom: .125rem;
+          border-bottom: .125rem solid v.$white;
+        }
       }
     }
 

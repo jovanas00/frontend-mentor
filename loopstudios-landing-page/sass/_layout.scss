@@ -30,7 +30,6 @@
             font-family: v.$font-light;
             border: 1px solid v.$white;
             padding: 1.875rem;
-            margin-bottom: 6.25rem;
         }
     }
 
@@ -44,7 +43,7 @@
                 text-align: center;
 
                 h1 {
-                    font-size: v.$font-size*2;
+                    font-size: v.$font-size * 2;
                 }
             }
         }
@@ -57,12 +56,13 @@
                 div {
                     font-size: v.$font-size*2;
                     text-align: center;
+                    vertical-align: center;
                 }
             }
         
             .bottom-movies {
                 grid-template-columns:  1fr;
-                div {
+                .movie {
                     .desktop {
                         display: none;
                     }
@@ -71,7 +71,15 @@
                         display: grid;
                         max-width: 100%;
                     }
-                }  
+                }
+                
+                &:last-child {
+                    margin-bottom: 6.25rem;
+                }
+            }
+
+            button {
+                top: 79.375rem;
             }
         }
     }

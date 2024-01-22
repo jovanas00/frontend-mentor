@@ -49,6 +49,7 @@
         font-size: v.$font-size*3;
       }
       button {
+        position: relative;
         background-color: v.$white;
         border: 1px solid v.$black;
         color: v.$black;
@@ -69,10 +70,10 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1.25rem;
-      div {
+      .movie {
         position: relative;
         object-fit: fill;
-        div {
+        .movie-title {
           position: absolute;
           color: v.$white;
           bottom: 1.25rem;
@@ -80,20 +81,23 @@
           font-size: v.$font-size * 2;
           font-family: v.$font-light;
           width: 9.375rem;
-          z-index: 10;
-        }
-        img {
-          max-width: 100%;
+          z-index: 100;
         }
 
         .mobile {
           display: none;
         }
 
+
         &:hover {
-          opacity: 0.7;
-          color: v.$black;
+          img {
+            opacity: 0.5;
+          }
           cursor: pointer;
+          
+          .movie-title {
+            color: rgba(0,0,0,1);   
+          }
         }
       }
     }
