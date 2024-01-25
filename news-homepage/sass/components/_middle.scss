@@ -1,22 +1,26 @@
 @use '../variables' as v;
 
 .middle {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  // display: grid;
+  // grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.25rem;
 
   .middle__left {
     display: grid;
+    flex: 2;
     gap: .9375rem;
     .left__top {
+      display: flex;
       .left__top--mobile {
         display: none;
       }
     }
 
     .left__bottom {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      max-width: 50rem;
       gap: 1.875rem;
 
       .left__title {
@@ -47,10 +51,13 @@
 
   .middle__right {
     display: flex;
+    flex: 1;
     flex-direction: column;
     gap: 1.25rem;
     background-color: v.$very-dark-blue;
-    padding: .625rem;
+    padding: 1.625rem;
+    min-width: 15.625rem;
+    max-width: 25rem;
 
     .right__title {
       color: v.$soft-orange;
@@ -79,7 +86,7 @@
         }
 
         .section__title {
-          font-size: v.$font-size*1.2;
+          font-size: v.$font-size * 1.2;
           font-family: v.$font-bold;
           color: white;
 

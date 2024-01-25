@@ -22,7 +22,8 @@
       }
 
       .icon-menu {
-        visibility: visible;
+        // visibility: visible;
+        display: flex;
         margin-top: 25%;
       }
     }
